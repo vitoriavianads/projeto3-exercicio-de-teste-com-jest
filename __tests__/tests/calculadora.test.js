@@ -1,17 +1,18 @@
-const { subtrai, ehPar, contarCaracteres} = require('../src/calculadora')
+const { subtrai, ehPar, contarCaracteres } = require('../../../src/calculadora')
 
-describe('Funções da calculadora', () => {
-    test('Subtrai deve retorna a diferença ou a subtração de dois números', () => {
-        expect(subtrai(9,5)).toBe(4)
-    })
+describe('Testes da Calculadora', () => {
+  test('Subtrai dois números corretamente', () => {
+    expect(subtrai(6, 3)).toBe(3)
+    expect(subtrai(10, 5)).toBe(5)
+  })
 
-    test('Deve verificar se um número é par', () => {
-        expect(ehPar(2)).toBe(true)
-    })
+  test('Verifica se um número é par', () => {
+    expect(ehPar(4)).toBe(true)
+    expect(ehPar(9)).toBe(false)
+  })
 
-    test('Contar a quantidade de caracteres em uma string', () => {
-        expect(contarCaracteres('Iai Everson')).toBe(11)
-    })
+  test('Conta o número de caracteres em uma string', () => {
+    expect(contarCaracteres('luna')).toBe(4)
+    expect(contarCaracteres('boa')).toBe(3)
+  })
 })
-
-
