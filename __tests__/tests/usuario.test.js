@@ -14,8 +14,8 @@ describe('Usuário', () => {
     // })
 
     test('As propriedades devem ter valores esperados', () => {
-        expect(usuario.nome).toBe('Ray Santiago')
+        expect(usuario.nome).toBe('Ana Vitória')
         expect(usuario.idade).toBe(18)
-        expect(usuario.email).toBe('jose.gomes360@aluno.ce.gov.br')
+        expect(usuario.email).toBe('ana.mesquita129@aluno.ce.gov.br')
     })
 })
