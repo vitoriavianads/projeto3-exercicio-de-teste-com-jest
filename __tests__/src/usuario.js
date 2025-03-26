@@ -1,5 +1,5 @@
 const usuario = {
-    nome: 'Ana Vitoria',
+    nome: 'Ana Vitória',
     idade: 18,
     email: 'ana.mesquita129@aluno.ce.gov.br'
 }
